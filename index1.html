@@ -51,14 +51,16 @@
     import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
     // GANTI DENGAN KONFIGURASI FIREBASE ANDA
-    const firebaseConfig = {
-        apiKey: "MILIK_ANDA",
-        authDomain: "PROJECT_ID.firebaseapp.com",
-        projectId: "PROJECT_ID",
-        storageBucket: "PROJECT_ID.appspot.com",
-        messagingSenderId: "ID_ANDA",
-        appId: "APP_ID_ANDA"
-    };
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDR1cyoxWiJbrC02tUN7KKKxkPaD1o93F0",
+  authDomain: "presensi-guru-249c7.firebaseapp.com",
+  projectId: "presensi-guru-249c7",
+  storageBucket: "presensi-guru-249c7.firebasestorage.app",
+  messagingSenderId: "408274758860",
+  appId: "1:408274758860:web:1ad8d2802482016fdde669",
+  measurementId: "G-30L0F8WM3V"
+};
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
@@ -149,5 +151,4 @@ window.processPresensi = processPresensi;
 </script>
 
 </body>
-
 </html>
